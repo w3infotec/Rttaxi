@@ -16,7 +16,7 @@
 		<!-- Site Title -->
 		<title>Taxi</title>
 
-		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
 			<!--
 			CSS
 			============================================= -->
@@ -24,42 +24,42 @@
 			<link rel="stylesheet" href="css/font-awesome.min.css">
 			<link rel="stylesheet" href="css/bootstrap.css">
 			<link rel="stylesheet" href="css/magnific-popup.css">
-			<link rel="stylesheet" href="css/nice-select.css">							
+			<link rel="stylesheet" href="css/nice-select.css">
 			<link rel="stylesheet" href="css/animate.min.css">
-			<link rel="stylesheet" href="css/jquery-ui.css">			
+			<link rel="stylesheet" href="css/jquery-ui.css">
 			<link rel="stylesheet" href="css/main.css">
 		</head>
-		<body>	
+		<body>
 			  <header id="header">
 		  		<div class="header-top">
 				</div>
 			    <div class="container main-menu">
 			    	<div class="row align-items-center justify-content-between d-flex">
-			    		<a href="index.html"><img src="img/logo.png" alt="" title="" /></a>		
+			    		<a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
 						<nav id="nav-menu-container">
 							<ul class="nav-menu">
 							  <li class="menu-active"><a href="index.html">Home</a></li>
 							  <li><a href="about.html">About</a></li>
 							  <li><a href="service.html">Services</a></li>
 							  <li><a href="gallery.html">Gallery</a></li>
-							         
-							  						  			          	          
+
+
 							  <li><a href="contact.html">Contact</a></li>
 							</ul>
-						</nav><!-- #nav-menu-container -->		
+						</nav><!-- #nav-menu-container -->
 			    	</div>
 			    </div>
 			  </header><!-- #header -->
 
 			<!-- start banner Area -->
 			<section class="banner-area relative" id="home">
-				<div class="overlay overlay-bg"></div>	
+				<div class="overlay overlay-bg"></div>
 				<div class="container">
 					<div class="row fullscreen d-flex align-items-center justify-content-between">
 						<div class="banner-content col-lg-6 col-md-6 ">
 							<h2 class="text-white ">Need a ride? just call </h2>
 							<h1 class="text-uppercase">
-								+64 22 074 1807					
+								+64 22 074 1807
 							</h1>
 							<p class="pt-10 pb-10 text-white">
 								A better way to travel. Safe, luxurious cars, smooth journeys and pick-ups that are on time, everytime. Whether you enjoy city breaks or extended holidays in the sun.
@@ -69,38 +69,35 @@
 							<a href="#" class="primary-btn text-uppercase">Paywave</a>
 							<a href="#" class="primary-btn text-uppercase">efpose</a>
 							<a href="#" class="primary-btn text-uppercase">cash</a>
-							
+
 						</div>
 						<div class="col-lg-4  col-md-6 header-right">
 							<h4 class="pb-30">Book Your Texi Online!</h4>
-							<form class="form">
-							    <div class="from-group">
-							    	<input class="form-control txt-field" type="text" name="name" placeholder="Your name"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your name'">
-							    	<input class="form-control txt-field" type="email" name="email" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'">
-							    	<input class="form-control txt-field" type="tel" name="phone" placeholder="Phone number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone number'">
-                                    <input class="form-control txt-field" type="Pick-up" name="Pick-up" placeholder="Pick-up" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Pick-up'">
-							    	<input class="form-control txt-field" type="Destination" name="Destination" placeholder="Destination" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Destination'">
-							    </div>								
-							    					    
-							    <div class="form-group">
-									<div class="input-group dates-wrap">                                              
-										<input id="datepicker2" class="dates form-control"  placeholder="Date & time" type="text">                        
-										<div class="input-group-prepend">
-											<span  class="input-group-text"><span class="lnr lnr-calendar-full"></span></span>
-										</div>											
-									</div>
-							    </div>							    
-							    <div class="form-group">
-
-							            <button class="btn btn-default btn-lg btn-block text-center text-uppercase">Make reservation</button>
-
-							    </div>
-							</form>
-						</div>											
+								<form action="https://formspree.io/f/mrbkgjor" method="POST" class="form">
+								  <div class="from-group">
+								    <input class="form-control txt-field" type="text" name="name" placeholder="Your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your name'">
+								    <input class="form-control txt-field" type="email" name="email" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required>
+								    <input class="form-control txt-field" type="tel" name="phone" placeholder="Phone number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone number'">
+								    <input class="form-control txt-field" type="text" name="Pick-up" placeholder="Pick-up" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Pick-up'">
+								    <input class="form-control txt-field" type="text" name="Destination" placeholder="Destination" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Destination'">
+								  </div>
+								  <div class="form-group">
+								    <div class="input-group dates-wrap">
+								      <input id="datepicker2" class="dates form-control" name="date" placeholder="Date & time" type="text">
+								      <div class="input-group-prepend">
+								        <span class="input-group-text"><span class="lnr lnr-calendar-full"></span></span>
+								      </div>
+								    </div>
+								  </div>
+								  <div class="form-group">
+								    <button class="btn btn-default btn-lg btn-block text-center text-uppercase" type="submit">Make reservation</button>
+								  </div>
+								</form>
+						</div>
 					</div>
-				</div>					
+				</div>
 			</section>
-			<!-- End banner Area -->	
+			<!-- End banner Area -->
 
 			<!-- Start home-about Area -->
 			<section class="home-about-area section-gap">
@@ -113,15 +110,15 @@
 							<h1>Globally Connected
 							by Large Network</h1>
 							<h4>We are here to listen from you deliver exellence</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.								
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
 							</p>
 							<a class="text-uppercase primary-btn" href="#">Get Details</a>
 						</div>
 					</div>
-				</div>	
+				</div>
 			</section>
 			<!-- End home-about Area -->
-			
+
 			<!-- Start services Area -->
 			<section class="services-area pb-120">
 				<div class="container">
@@ -150,44 +147,44 @@
 							<p>
 								Usage of the Internet is becoming more common due to rapid advancement of technology and power.
 							</p>
-						</div>												
-					</div>	
-				</div>	
+						</div>
+					</div>
+				</div>
 			</section>
 			<!-- End services Area -->
-			
+
 			<!-- Start image-gallery Area -->
 			<section class="image-gallery-area section-gap">
 				<div class="container">
 					<div class="row section-title">
 						<h1>Image Gallery that we like to share</h1>
 						<p>Who are in extremely love with eco friendly system.</p>
-					</div>					
+					</div>
 					<div class="row">
 						<div class="col-lg-4 single-gallery">
 							<a href="img/g1.jpg" class="img-gal"><img class="img-fluid" src="img/g1.jpg" alt=""></a>
 							<a href="img/g4.jpg" class="img-gal"><img class="img-fluid" src="img/g4.jpg" alt=""></a>
-						</div>	
+						</div>
 						<div class="col-lg-4 single-gallery">
 							<a href="img/g2.jpg" class="img-gal"><img class="img-fluid" src="img/g2.jpg" alt=""></a>
-							<a href="img/g5.jpg" class="img-gal"><img class="img-fluid" src="img/g5.jpg" alt=""></a>						
-						</div>	
+							<a href="img/g5.jpg" class="img-gal"><img class="img-fluid" src="img/g5.jpg" alt=""></a>
+						</div>
 						<div class="col-lg-4 single-gallery">
 							<a href="img/g3.jpg" class="img-gal"><img class="img-fluid" src="img/g3.jpg" alt=""></a>
 							<a href="img/g6.jpg" class="img-gal"><img class="img-fluid" src="img/g6.jpg" alt=""></a>
-						</div>				
+						</div>
 					</div>
-				</div>	
+				</div>
 			</section>
 			<!-- End image-gallery Area -->
-			
+
 			<!-- Start reviews Area -->
 			<section class="reviews-area section-gap">
 				<div class="container">
 					<div class="row section-title">
 						<h1>Client’s Reviews</h1>
 						<p>Who are in extremely love with eco friendly system.</p>
-					</div>					
+					</div>
 					<div class="row">
 						<div class="col-lg-4 col-md-6">
 							<div class="single-review">
@@ -203,7 +200,7 @@
 									<span class="fa fa-star"></span>
 								</div>
 							</div>
-						</div>	
+						</div>
 						<div class="col-lg-4 col-md-6">
 							<div class="single-review">
 								<h4>Chad Herrera</h4>
@@ -218,7 +215,7 @@
 									<span class="fa fa-star"></span>
 								</div>
 							</div>
-						</div>	
+						</div>
 						<div class="col-lg-4 col-md-6">
 							<div class="single-review">
 								<h4>Andre Gonzalez</h4>
@@ -233,7 +230,7 @@
 									<span class="fa fa-star"></span>
 								</div>
 							</div>
-						</div>	
+						</div>
 						<div class="col-lg-4 col-md-6">
 							<div class="single-review">
 								<h4>Jon Banks</h4>
@@ -248,7 +245,7 @@
 									<span class="fa fa-star"></span>
 								</div>
 							</div>
-						</div>	
+						</div>
 						<div class="col-lg-4 col-md-6">
 							<div class="single-review">
 								<h4>Landon Houston</h4>
@@ -263,7 +260,7 @@
 									<span class="fa fa-star"></span>
 								</div>
 							</div>
-						</div>	
+						</div>
 						<div class="col-lg-4 col-md-6">
 							<div class="single-review">
 								<h4>Nelle Wade</h4>
@@ -278,12 +275,12 @@
 									<span class="fa fa-star"></span>
 								</div>
 							</div>
-						</div>																															
+						</div>
 					</div>
-				</div>	
+				</div>
 			</section>
 			<!-- End reviews Area -->
-							
+
 			<!-- Start home-calltoaction Area -->
 			<section class="home-calltoaction-area relative">
 				<div class="container">
@@ -299,17 +296,17 @@
 							<a href="#" class="primary-btn">Reach Our Support Team</a>
 						</div>
 					</div>
-				</div>	
+				</div>
 			</section>
 			<!-- End home-calltoaction Area -->
-			
+
 			<!-- Start latest-blog Area -->
 			<section class="latest-blog-area section-gap">
 				<div class="container">
 					<div class="row section-title">
 						<h1>Latest News from our Blog</h1>
 						<p>Who are in extremely love with eco friendly system.</p>
-					</div>						
+					</div>
 					<div class="row">
 						<div class="col-lg-6">
 							<div class="single-latest-blog">
@@ -346,13 +343,13 @@
 								</p>
 								<p class="date">31st January, 2018</p>
 							</div>
-						</div>						
+						</div>
 					</div>
-				</div>	
+				</div>
 			</section>
 			<!-- End latest-blog Area -->
-			
-			<!-- start footer Area -->		
+
+			<!-- start footer Area -->
 			<footer class="footer-area section-gap">
 				<div class="container">
 					<div class="row">
@@ -364,7 +361,7 @@
 									<li><a href="#">Brand Assets</a></li>
 									<li><a href="#">Investor Relations</a></li>
 									<li><a href="#">Terms of Service</a></li>
-								</ul>								
+								</ul>
 							</div>
 						</div>
 						<div class="col-lg-2 col-md-6 col-sm-6">
@@ -375,7 +372,7 @@
 									<li><a href="#">Brand Assets</a></li>
 									<li><a href="#">Investor Relations</a></li>
 									<li><a href="#">Terms of Service</a></li>
-								</ul>								
+								</ul>
 							</div>
 						</div>
 						<div class="col-lg-2 col-md-6 col-sm-6">
@@ -386,9 +383,9 @@
 									<li><a href="#">Research</a></li>
 									<li><a href="#">Experts</a></li>
 									<li><a href="#">Agencies</a></li>
-								</ul>								
+								</ul>
 							</div>
-						</div>												
+						</div>
 						<div class="col-lg-2 col-md-6 col-sm-6 social-widget">
 							<div class="single-footer-widget">
 								<h6>Follow Us</h6>
@@ -400,7 +397,7 @@
 									<a href="#"><i class="fa fa-behance"></i></a>
 								</div>
 							</div>
-						</div>							
+						</div>
 						<div class="col-lg-4  col-md-6 col-sm-6">
 							<div class="single-footer-widget">
 								<h6>Newsletter</h6>
@@ -418,30 +415,51 @@
 									</form>
 								</div>
 							</div>
-						</div>	
+						</div>
 						<p class="mt-80 mx-auto footer-text col-lg-12">
 							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						</p>											
+						</p>
 					</div>
 				</div>
 				<img class="footer-bottom" src="img/footer-bottom.png" alt="">
-			</footer>	
-			<!-- End footer Area -->	
+			</footer>
+			<!-- End footer Area -->
 
 			<script src="js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-			<script src="js/vendor/bootstrap.min.js"></script>			
+			<script src="js/vendor/bootstrap.min.js"></script>
 			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-  			<script src="js/easing.min.js"></script>			
+  			<script src="js/easing.min.js"></script>
 			<script src="js/hoverIntent.js"></script>
-			<script src="js/superfish.min.js"></script>	
+			<script src="js/superfish.min.js"></script>
 			<script src="js/jquery.ajaxchimp.min.js"></script>
-			<script src="js/jquery.magnific-popup.min.js"></script>	
- 			<script src="js/jquery-ui.js"></script>								
-			<script src="js/jquery.nice-select.min.js"></script>							
-			<script src="js/mail-script.js"></script>	
-			<script src="js/main.js"></script>	
+			<script src="js/jquery.magnific-popup.min.js"></script>
+ 			<script src="js/jquery-ui.js"></script>
+			<script src="js/jquery.nice-select.min.js"></script>
+			<script src="js/mail-script.js"></script>
+			<script src="js/main.js"></script>
+			<script>
+			  document.querySelector('.form').addEventListener('submit', async (e) => {
+			    e.preventDefault();
+			    const form = e.target;
+			    try {
+			      const response = await fetch(form.action, {
+			        method: 'POST',
+			        body: new FormData(form),
+			        headers: { 'Accept': 'application/json' }
+			      });
+			      if (response.ok) {
+			        alert('Reservation submitted!');
+			        form.reset();
+			      } else {
+			        alert('Submission failed. Please try again.');
+			      }
+			    } catch (error) {
+			      alert('Error: ' + error.message);
+			    }
+			  });
+			</script>
 		</body>
 	</html>
