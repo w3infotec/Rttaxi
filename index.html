@@ -28,6 +28,7 @@
 			<link rel="stylesheet" href="css/animate.min.css">
 			<link rel="stylesheet" href="css/jquery-ui.css">
 			<link rel="stylesheet" href="css/main.css">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css">
 		</head>
 		<body>
 			  <header id="header">
@@ -83,11 +84,10 @@
 								  </div>
 								  <div class="form-group">
 								    <div class="input-group dates-wrap">
-								      <input
-  id="party"
-  type="datetime-local"
-  name="party-date"
-  value="2025-06-01T08:30" />
+										<input id="datetimepicker" class="dates form-control" name="date" placeholder="Date & time" type="text">
+								      <div class="input-group-prepend">
+								        <span class="input-group-text"><span class="lnr lnr-calendar-full" onclick="$('#datetimepicker').datetimepicker('show');"></span></span>
+								      </div>
 								    </div>
 								  </div>
 								  <div class="form-group">
@@ -110,7 +110,7 @@
 						<div class="col-lg-6 about-right">
 							<h1>Globally Connected
 							by Large Network</h1>
-							
+
 							<p>Whether you’re catching a flight or touching down at Airport, our taxi gets you there and gets you out easy. When arriving, pre-book ahead of time and your driver will meet you at Arrivals at no extra cost, or simply jump in an taxi at the Airport.
 							</p>
 							<a class="text-uppercase primary-btn" href="#">Get Details</a>
@@ -199,9 +199,9 @@
 			</section>
 			<!-- End home-calltoaction Area -->
 
-			
 
-	
+
+
 
 			<script src="js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -215,7 +215,23 @@
  			<script src="js/jquery-ui.js"></script>
 			<script src="js/jquery.nice-select.min.js"></script>
 			<script src="js/mail-script.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js"></script>
 			<script src="js/main.js"></script>
+			<script>
+		        $(document).ready(function() {
+		            $('#datetimepicker').datetimepicker({
+		                dateFormat: 'yy-mm-dd', // Date format (e.g., 2025-06-05)
+		                timeFormat: 'HH:mm',    // Time format (24-hour)
+		                stepHour: 1,            // Hour step
+		                stepMinute: 5,          // Minute step
+		                minDate: 0,             // Disable past dates
+		                showSecond: false,      // Hide seconds
+		                controlType: 'select',  // Use dropdowns for time
+		                showOn: 'focus',        // Show picker on input focus
+		                showButtonPanel: true   // Show button panel (e.g., "Done" button)
+		            });
+		        });
+		    </script>
 			<script>
 			  document.querySelector('.form').addEventListener('submit', async (e) => {
 			    e.preventDefault();
